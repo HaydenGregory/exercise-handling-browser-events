@@ -1,46 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MadLib</title>
+  <title>Mad Lib</title>
+  <link rel="stylesheet" href="./madlib.css">
 </head>
+
 <body>
-  <!-- HTML goes here -->
-  <h1>MadLib</h1>
+  <div class="container">
+    <!-- HTML goes here -->
+    <h1>Dylan & Hayden's MadLib</h1>
 
-  <form id="madLibForm" style="display: block;">
-    <p class="form-group">
-      <label for="animal">Animal</label>
-      <br>
-      <input type="text" name="animal" id="animal">
-    </p>
-    <button type="submit">Do the MadLib!</button>
-  </form>
-  
-  <div id="madLibStory" style="display: none">
-    <h2>Nature Show</h2>
-    <p>
-      The majestic <span class="animal"></span> has roamed the forests of 
-      <span class="country"></span> for thousands of years. Today, she wanders
-      in search of <span class="pluralNoun"></span>. She must find food to
-      survive. While hunting for <span class="food"></span>, she found a 
-      <span class="device"></span> hidden behind a <span class="noun"></span>.
-      Suddenly, the device turned on and started to become <span class="adjective"></span>.
-      The king of <span class="country"></span> suddenly appeared, jumped on top
-      of the <span class="adjective"></span> <span class="device"></span> and floated
-      off into the sunset.
-    </p>
-    <p>
-      The End.
-    </p>
+    <form id="madLibForm" style="display: block;">
+      <p class="form-group">
+        <label for="animal">Animal</label>
 
+        <input type="text" name="animal" id="animal">
+
+        <label for="country">Country</label>
+
+        <input type="text" name="country" id="country">
+
+        <label for="pluralNoun">Plural Noun</label>
+
+        <input type="text" name="pluralNoun" id="pluralNoun">
+
+        <label for="food">Food</label>
+
+        <input type="text" name="food" id="food">
+
+        <label for="device">Device</label>
+
+        <input type="text" name="device" id="device">
+
+        <label for="noun">Noun</label>
+
+        <input type="text" name="noun" id="noun">
+
+        <label for="adjective">Adjective</label>
+
+        <input type="text" name="adjective" id="adjective">
+
+        <label for="country2">Country Two</label>
+
+        <input type="text" name="country2" id="country2">
+
+        <label for="adjective2">Adjective Two</label>
+
+        <input type="text" name="adjective2" id="adjective2">
+
+        <label for="device2">Device Two</label>
+
+        <input type="text" name="device2" id="device2">
+          <button type="submit">Do the MadLib!</button>
+      </p>
+    </form>
+
+    <div id="madLibStory" style="display: none">
+      <h2>Nature Show</h2>
+      <p>
+        The majestic <span class="animal"></span> has roamed the forests of
+        <span class="country"></span> for thousands of years. Today, she wanders
+        in search of <span class="pluralNoun"></span>. She must find food to
+        survive. While hunting for <span class="food"></span>, she found a
+        <span class="device"></span> hidden behind a <span class="noun"></span>.
+        Suddenly, the device turned on and started to become <span class="adjective"></span>.
+        The king of <span class="country2"></span> suddenly appeared, jumped on top
+        of the <span class="adjective2"></span> <span class="device2"></span> and floated
+        off into the sunset.
+      </p>
+      <p>
+        The End.
+      </p>
+    </div>
     <button type="button" id="restart">Restart!</button>
+    <script src="./madlib.js"></script>
+
   </div>
-
-  <script>
-    // JavaScript goes here
-
-  </script>
 </body>
+
 </html>
