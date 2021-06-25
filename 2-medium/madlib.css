@@ -4,6 +4,14 @@
     align-items: center;
 }
 
+p {
+    max-width: 500px;
+}
+
+input {
+    color: black;
+}
+
 h1, h2 {
     text-align: center;
 }
