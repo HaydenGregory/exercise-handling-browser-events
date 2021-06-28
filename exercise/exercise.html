@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend for="order-type">Order Type</legend>
+            <select name="order-type" id="order-type">
+                <option disabled selected>Pick an Option</option>
+                <option value="pick-up">Pick-up</option>
+                <option value="Delivery">Delivery</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Name for order</legend>
+            <div>
+                <label for="firstName">First Name</label>
+                <br>
+                <input type="text" name="firstName" id="firstName">
+            </div>
+            <div>
+                <label for="lastName">Last Name</label>
+                <br>
+                <input type="text" name="lastName" id="lastName">
+            </div>
+        </fieldset>
+        <fieldset id='address-f' hidden>
+            <legend>Address</legend>
+            <div>
+                <input type="text" name="address" id="address">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Please select one</legend>
+            <div>
+                <select name="drop-down" id="select">
+                    <option disabled selected>Crust Type</option>
+                    <option value="thin-crust">Thin Crust</option>
+                    <option value="new-york">New York Style</option>
+                    <option value="deep-dish">Deep Dish</option>
+                    <option value="">Option 3</option>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Toppings</legend>
+            <div>
+                <input type="radio" name="option" id="pepperoni" value="pepperoni">
+                <label for="pepperoni">Pepperoni</label>
+            </div>
+            <div>
+                <input type="radio" name="option" id="mushrooms" value="mushrooms">
+                <label for="mushrooms">Mushrooms</label>
+            </div>
+            <div>
+                <input type="radio" name="option" id="sausage" value="sausage">
+                <label for="sausage">Sausage</label>
+            </div>
+            <div>
+                <input type="radio" name="option" id="extra-cheese" value="extra-cheese">
+                <label for="extra-cheese">Extra Cheese</label>
+            </div>
+            <div>
+                <input type="radio" name="option" id="onions" value="onions">
+                <label for="onions">Onions</label>
+            </div>
+            <div>
+                <input type="radio" name="option" id="green-peppers" value="green-peppers">
+                <label for="green-peppers">Green Peppers</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <label for="extra-instructions">Additional Instructions</label>
+            <br>
+            <textarea type="text" id="extra-instructions" row=30 col=10></textarea>
+        </fieldset>
+        <button type="submit">Submit</button>
+    </form>
+    <script src="./ex.js"></script>
+</body>
+
+</html>

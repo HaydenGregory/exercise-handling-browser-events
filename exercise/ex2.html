@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ex2.css">
+</head>
+
+<body>
+    <form id="user-sign-up" method="POST" action="http://127.0.0.1:5500/exercise/2-madlibs.html">
+        <fieldset id="registration">
+            <legend>Registration</legend>
+            <div>
+                <legend>First Name *</legend>
+                <input type="text" name="first-name" id="first-name" required minlength="5">
+            </div>
+            <div>
+                <legend>Last Name *</legend>
+                <input type="text" name="last-name" id="last-name" required minlength="5">
+            </div>
+            <div>
+                <legend for="password">Password *</legend>
+                <input type="password" name="password" id="password" required minlength="6" maxlength="15">
+            </div>
+            <div>
+                <legend>Email *</legend>
+                <input type="email" name="email" id="email" required pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+">
+            </div>
+            <div>
+                <legend>Username *</legend>
+                <input type="text" name="username" id="username" required maxlength="">
+            </div>
+            <div>
+                <legend>Age *</legend>
+                <input type="number" name="age" id="age" required min="0" max="100">
+            </div>
+            <div>
+                <legend>About Me *</legend>
+                <textarea name="about-me" id="about-me" cols="30" rows="10"
+                    placeholder="Tell us a little about yourself!" required maxlength="250"></textarea>
+            </div>
+        </fieldset>
+            <button id="submit" type="submit">Submit</button>
+    </form>
+    <script src="./ex2.js"></script>
+</body>
+
+</html>
