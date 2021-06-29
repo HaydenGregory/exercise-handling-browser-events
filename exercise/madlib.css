@@ -24,6 +24,7 @@ h1, h2 {
 }
 
 button {
+    background-color: #D0430D;
     margin-top: 15px;
     color: rgba(0, 0, 0, 0.507);
 }
@@ -39,4 +40,4 @@ label {
 }
 
 body {
-    background-color: tomato;}
+    background-image: url(./background.png);}
